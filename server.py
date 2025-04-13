@@ -1455,6 +1455,7 @@ def log_request_beautifully(method, path, claude_model, openai_model, num_messag
 
 
 def setup_server():
+    print("Running server...")
     uvicorn.run(app, host="0.0.0.0", port=8082, log_level="error")
 
 
